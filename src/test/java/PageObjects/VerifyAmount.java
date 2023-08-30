@@ -45,6 +45,9 @@ public class VerifyAmount extends BasePage {
 		System.out.println(amount.getText());
 		
 	}
+
+
+	
 	
 
 }

@@ -61,7 +61,7 @@ public class LoginPage extends BasePage {
 			Logout.click();
 		}
 		
-		
+	
 		
 	}
 

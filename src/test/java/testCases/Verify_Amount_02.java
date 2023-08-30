@@ -22,7 +22,6 @@ public class Verify_Amount_02 extends BaseClass {
             loginPage.setpassword(rb.getString("password"));
             loginPage.loginbutton();
 
-            logger.info("Login successful");
 
             if (verifyAmount == null) {
                 verifyAmount = new VerifyAmount(driver);
@@ -35,7 +34,7 @@ public class Verify_Amount_02 extends BaseClass {
         } catch (Exception e) {
             Assert.fail();
         }
-        logger.info("Finished verify amount test case");
+    
 
         if (loginPage != null) {
             loginPage.menu();

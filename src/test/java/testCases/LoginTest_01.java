@@ -16,7 +16,6 @@ public class LoginTest_01 extends BaseClass
 		lp.setusername(rb.getString("username"));
 		lp.setpassword(rb.getString("password"));
 		lp.loginbutton();
-		logger.info("Login sucessful");
 		
 	}
 	

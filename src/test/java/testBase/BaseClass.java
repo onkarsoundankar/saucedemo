@@ -18,14 +18,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class BaseClass {
 
 	public static WebDriver driver;
-    public Logger logger;
+
     public ResourceBundle rb;
     
 	@BeforeClass
 	@Parameters("browser")
 	public void setup(String br)
 	{ 
-		logger=LogManager.getLogger(this.getClass());
+		
 		rb=ResourceBundle.getBundle("config");  //Load config.properties
 		
 		
