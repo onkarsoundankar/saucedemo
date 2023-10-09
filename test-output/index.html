@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Saucedemo">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Saucedemo" title="testCases.Verify_Amount_02" class="method navigator-link" hash-for-method="verify_Amount">verify_Amount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Saucedemo" title="testCases.LoginTest_01" class="method navigator-link" hash-for-method="test_login">test_login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Saucedemo -->
@@ -121,14 +121,14 @@
           <div class="suite-Saucedemo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.Verify_Amount_02</span>
+              <span class="class-name">testCases.LoginTest_01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Amount">
-                  </a> <!-- verify_Amount -->
-                  <span class="method-name">verify_Amount</span>
+                  <a name="test_login">
+                  </a> <!-- test_login -->
+                  <span class="method-name">test_login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,10 +143,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Saucedemo&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Verify_Amount_02&quot;/&gt;
+      &lt;class name=&quot;testCases.LoginTest_01&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Saucedemo --&gt;
@@ -188,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_Amount')
-data.setCell(0, 2, 'testCases.Verify_Amount_02')
-data.setCell(0, 3, 335);
+data.setCell(0, 1, 'test_login')
+data.setCell(0, 2, 'testCases.LoginTest_01')
+data.setCell(0, 3, 151);
 window.suiteTableData['Saucedemo']= { tableData: data, tableDiv: 'times-div-Saucedemo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 335 ms</span>
+              <span class="suite-total-time">Total running time: 151 ms</span>
               <div id="times-div-Saucedemo">
               </div> <!-- times-div-Saucedemo -->
             </div> <!-- times-div -->
@@ -221,14 +224,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Verify_Amount_02</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LoginTest_01</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verify_Amount</span>
-                <span class="method-start">3126 ms</span>
+                <span class="method-name">test_login</span>
+                <span class="method-start">4636 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

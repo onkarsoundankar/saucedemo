@@ -14,14 +14,17 @@ public class LoginPage extends BasePage {
 		
 	}
 		@FindBy(name="user-name")
+		static
 		WebElement txt_username;
 		
 		
 		@FindBy(name="password")
+		static
 		WebElement txt_password;
 		
 		
 		@FindBy(xpath="//input[@id='login-button']")
+		static
 		WebElement loginbutton;
 		
 		
@@ -34,7 +37,12 @@ public class LoginPage extends BasePage {
 		WebElement Logout;
 		
 		
-		
+		public static void dologin(String username, String password)
+		{
+			txt_username.sendKeys(username);
+			txt_password.sendKeys(password);
+			loginbutton.click();
+		}
 		
 		public void setusername(String username) 
 		{
@@ -46,6 +54,10 @@ public class LoginPage extends BasePage {
 			txt_password.sendKeys(password);
 		}
 
+		
+	
+		
+		
 		public void loginbutton() 
 		{
 			loginbutton.click();

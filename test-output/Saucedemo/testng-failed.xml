@@ -4,12 +4,12 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.LoginTest_01">
+      <class name="testCases.VerifyName_TC_03">
         <methods>
-          <include name="test_login"/>
+          <include name="checkjacketname"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.LoginTest_01 -->
+      </class> <!-- testCases.VerifyName_TC_03 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Saucedemo] -->
